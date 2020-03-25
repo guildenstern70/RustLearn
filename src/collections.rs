@@ -3,7 +3,15 @@
 // Copyright 2020, Alessio Saltarin
 // This software is licensed under MIT license.
 //
-pub(crate) fn a_list_of_numbers() {
+
+pub(crate) fn an_array_of_strings() {
+    let months = ["January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"];
+
+    println!("The third month of the year is {}", months[2]);
+}
+
+pub(crate) fn a_vector_of_numbers() {
     let mut v: Vec<i32> = Vec::new();
 
     v.push(5);

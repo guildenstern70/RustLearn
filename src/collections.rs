@@ -11,6 +11,7 @@ pub(crate) fn an_array_of_strings() {
     println!("The third month of the year is {}", months[2]);
 }
 
+// pub(create) means: This function is visible within this crate (library/namespace)
 pub(crate) fn a_vector_of_numbers() {
     let mut v: Vec<i32> = Vec::new();
 

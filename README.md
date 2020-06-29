@@ -9,3 +9,9 @@ A demo template project in Rust
 #### Run:
 
     cargo run
+    
+#### Unit Tests:
+
+    cargo test
+    
+    

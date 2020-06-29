@@ -10,7 +10,7 @@ mod loops;
 mod functions;
 mod ownership;
 
-const VERSION: &str = "0.1.2";
+const VERSION: &str = "0.1.4";
 
 fn main() {
     println!("Rust Learn v.{}", VERSION);
@@ -24,7 +24,7 @@ fn main() {
     let twelve = functions::a_simple_sum(7, 5);
     println!(" 7 + 5 = {}", twelve);
     sep("Loops");
-    let result = loops::loop_way_one();
+    let result = loops::loop_ways();
     println!(" Loop Result = {}", result);
     sep("Ownerhip");
     ownership::ownerhip_demo();

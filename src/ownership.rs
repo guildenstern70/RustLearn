@@ -1,4 +1,8 @@
-
+//
+// Rust Learn
+// Copyright 2020, Alessio Saltarin
+// This software is licensed under MIT license.
+//
 
 pub(crate) fn ownerhip_demo() {
 
@@ -35,5 +39,17 @@ fn return_ownership(a_string: String) -> (usize, String) {
 fn operates_on_reference(a_string_reference: &String) -> usize {
     let string_len = a_string_reference.len();
     string_len
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn string_len_test() {
+        let a_string = String::from("A test string");
+        let string_size = operates_on_reference(&a_string);
+        assert_eq!(13, string_size);
+    }
 }
 

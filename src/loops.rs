@@ -4,7 +4,7 @@
 // This software is licensed under MIT license.
 //
 
-pub(crate) fn loop_way_one() -> i32 {
+pub(crate) fn loop_ways() -> i32 {
     let mut counter = 0;
 
     // Classic
@@ -24,4 +24,14 @@ pub(crate) fn loop_way_one() -> i32 {
     };
 
     result
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn loop_test() {
+        assert_eq!(20, loop_ways());
+    }
 }

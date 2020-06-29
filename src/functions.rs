@@ -15,3 +15,14 @@ fn implicit_return(a: i32, b: i32) -> i32 {
     a + b
 }
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn a_simple_sum_test() {
+        assert_eq!(264, a_simple_sum(234, 30));
+    }
+}
+
+

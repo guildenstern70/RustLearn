@@ -8,8 +8,9 @@ mod collections;
 mod variables;
 mod loops;
 mod functions;
+mod ownership;
 
-const VERSION: &str = "0.1.0";
+const VERSION: &str = "0.1.2";
 
 fn main() {
     println!("Rust Learn v.{}", VERSION);
@@ -25,6 +26,8 @@ fn main() {
     sep("Loops");
     let result = loops::loop_way_one();
     println!(" Loop Result = {}", result);
+    sep("Ownerhip");
+    ownership::ownerhip_demo();
 }
 
 fn sep(name: &str) {

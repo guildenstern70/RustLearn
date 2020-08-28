@@ -55,6 +55,6 @@ mod tests {
     #[test]
     #[should_panic]
     fn get_non_existent_number_test() {
-        let number_option = get_number(123);
+        let _number_option = get_number(123);
     }
 }

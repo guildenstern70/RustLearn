@@ -1,6 +1,6 @@
 //
 // Rust Learn
-// Copyright 2020, Alessio Saltarin
+// Copyright 2020-23, Alessio Saltarin
 // This software is licensed under MIT license.
 //
 
@@ -9,6 +9,7 @@ mod variables;
 mod loops;
 mod functions;
 mod ownership;
+mod classes;
 
 const VERSION: &str = "0.1.4";
 
@@ -28,6 +29,8 @@ fn main() {
     println!(" Loop Result = {}", result);
     sep("Ownerhip");
     ownership::ownerhip_demo();
+    sep("Structs (classes)");
+    classes::classes_demo();
 }
 
 fn sep(name: &str) {

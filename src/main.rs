@@ -11,7 +11,7 @@ mod functions;
 mod ownership;
 mod classes;
 
-const VERSION: &str = "0.1.4";
+const VERSION: &str = "0.1.5";
 
 fn main() {
     println!("Rust Learn v.{}", VERSION);

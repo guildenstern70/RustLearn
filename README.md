@@ -2,9 +2,13 @@
 
 A demo template project in Rust
 
-#### Compile/Build:
+#### Compile/Build for Debug:
 
     cargo build
+
+#### Compile/Build for Production:
+
+    cargo build --release
     
 #### Run:
 

@@ -1,6 +1,6 @@
 [package]
 name = "rust_learn"
-version = "0.1.5"
+version = "0.1.6"
 authors = ["Guildenstern70 <alessiosaltarin@gmail.com>"]
 
 

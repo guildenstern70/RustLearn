@@ -1,6 +1,6 @@
 //
 // Rust Learn
-// Copyright 2020-23, Alessio Saltarin
+// Copyright 2020-24, Alessio Saltarin
 // This software is licensed under MIT license.
 //
 
@@ -17,7 +17,7 @@ impl Person {
         let _surname = self.surname.to_string();
         _name.push_str(&_space);
         _name.push_str(&_surname);
-        return _name;
+        _name
     }
 }
 

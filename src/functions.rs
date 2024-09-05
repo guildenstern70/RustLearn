@@ -1,6 +1,6 @@
 //
 // Rust Learn
-// Copyright 2020-23, Alessio Saltarin
+// Copyright 2020-24, Alessio Saltarin
 // This software is licensed under MIT license.
 //
 

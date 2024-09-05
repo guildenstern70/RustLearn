@@ -1,10 +1,10 @@
 //
 // Rust Learn
-// Copyright 2020-23, Alessio Saltarin
+// Copyright 2020-24, Alessio Saltarin
 // This software is licensed under MIT license.
 //
 
-pub(crate) fn ownerhip_demo() {
+pub(crate) fn ownership_demo() {
 
     let one_string = String::from("One String");
     let mut result: usize = get_len_taking_ownership(one_string);

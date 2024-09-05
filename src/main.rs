@@ -1,6 +1,6 @@
 //
 // Rust Learn
-// Copyright 2020-23, Alessio Saltarin
+// Copyright 2020-24, Alessio Saltarin
 // This software is licensed under MIT license.
 //
 
@@ -10,6 +10,7 @@ mod loops;
 mod functions;
 mod ownership;
 mod classes;
+mod enummatch;
 
 const VERSION: &str = "0.1.5";
 
@@ -28,9 +29,11 @@ fn main() {
     let result = loops::loop_ways();
     println!(" Loop Result = {}", result);
     sep("Ownerhip");
-    ownership::ownerhip_demo();
+    ownership::ownership_demo();
     sep("Structs (classes)");
     classes::classes_demo();
+    sep("Enum Match");
+    enummatch::enum_demo();
 }
 
 fn sep(name: &str) {

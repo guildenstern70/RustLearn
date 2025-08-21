@@ -12,7 +12,7 @@ mod ownership;
 mod classes;
 mod enummatch;
 
-const VERSION: &str = "0.1.5";
+const VERSION: &str = env!("CARGO_PKG_VERSION");
 
 fn main() {
     println!("Rust Learn v.{}", VERSION);
@@ -28,7 +28,7 @@ fn main() {
     sep("Loops");
     let result = loops::loop_ways();
     println!(" Loop Result = {}", result);
-    sep("Ownerhip");
+    sep("Ownership");
     ownership::ownership_demo();
     sep("Structs (classes)");
     classes::classes_demo();
@@ -38,7 +38,7 @@ fn main() {
 
 fn sep(name: &str) {
     println!("\n***********************************************");
-    if name.len() > 0 {
+    if !name.is_empty() {
         println!("  {}", name);
         println!("***********************************************");
     }

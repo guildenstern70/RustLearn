@@ -12,12 +12,7 @@ struct Person {
 impl Person {
 
     fn get_full_name(&self) -> String {
-        let mut _name = self.name.to_string();
-        let _space = " ".to_string();
-        let _surname = self.surname.to_string();
-        _name.push_str(&_space);
-        _name.push_str(&_surname);
-        _name
+        format!("{} {}", self.name, self.surname)
     }
 }
 

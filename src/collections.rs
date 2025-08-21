@@ -31,10 +31,10 @@ fn get_number(index: usize) -> i32 {
     }
 }
 
-fn get_month_name(index: usize) -> String {
+fn get_month_name(index: usize) -> &'static str {
     let months = ["January", "February", "March", "April", "May", "June", "July",
         "August", "September", "October", "November", "December"];
-    String::from(months[index - 1])
+    months[index - 1]
 }
 
 #[cfg(test)]

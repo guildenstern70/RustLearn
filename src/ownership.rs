@@ -36,7 +36,7 @@ fn get_len_returning_ownership(a_string: String) -> (usize, String) {
     (string_len, a_string)
 }
 
-fn get_len_with_reference(a_string_reference: &String) -> usize {
+fn get_len_with_reference(a_string_reference: &str) -> usize {
     let string_len = a_string_reference.len();
     string_len
 }
